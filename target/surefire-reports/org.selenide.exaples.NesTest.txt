@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.selenide.exaples.NesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.598 s <<< FAILURE! - in org.selenide.exaples.NesTest
+Test1(org.selenide.exaples.NesTest)  Time elapsed: 12.598 s  <<< FAILURE!
+com.codeborne.selenide.ex.ListSizeMismatch: 
+List size mismatch: expected: = 10, actual: 0, collection: #Z26q7c UK95Uc uUuwM jGGQ5e
+Elements: []
+Screenshot: file:/C:/Users/Viacheslav/Desktop/my-test-portfolio/build/reports/tests/1662998912268.0.png
+Page source: file:/C:/Users/Viacheslav/Desktop/my-test-portfolio/build/reports/tests/1662998912268.0.html
+Timeout: 4 s.
+	at org.selenide.exaples.NesTest.Test1(NesTest.java:18)
+
