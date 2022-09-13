@@ -14,6 +14,14 @@ public class MainPage {
 
     By nameProduct = By.cssSelector("img.s-image");
 
+    By popUpSign = By.cssSelector("div.nav-line-1-container");
+
+    By buttonAuthorization = By.cssSelector("span.nav-action-inner");
+
+    By welcomeText = By.id("nav-link-accountList-nav-line-1");
+
+
+
     public By getFildSearch() {
         return fildSearch;
     }
@@ -30,4 +38,15 @@ public class MainPage {
         return nameProduct;
     }
 
+    public By getPopUpSign() {
+        return popUpSign;
+    }
+
+    public By getButtonAuthorization() {
+        return buttonAuthorization;
+    }
+
+    public By getWelcomeText() {
+        return welcomeText;
+    }
 }
