@@ -1,6 +1,7 @@
 package org.selenide.exaples;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.selenide.exaples.page.MainPage;
 import org.selenide.exaples.page.SettingPage;
@@ -24,6 +25,12 @@ public class BaseTest {
 
         $(mainPage.getTextResult()).shouldHave(text("RESULTS"));
         $$(mainPage.getNameProduct()).findBy(attribute("alt", brand));
+    }
+
+    @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
     }
 
     protected void openPage(String url){
